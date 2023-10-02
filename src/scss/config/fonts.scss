@@ -1,4 +1,32 @@
 @font-face {
+	font-family: FedraSansPro;
+	font-display: swap;
+	src: url("../fonts/FedraSansPro-Bold.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: FedraSansPro;
+	font-display: swap;
+	src: url("../fonts/FedraSansPro-Light.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: FedraSansPro;
+	font-display: swap;
+	src: url("../fonts/FedraSansPro-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: FedraSansPro;
+	font-display: swap;
+	src: url("../fonts/FedraSansPro-Normal.woff2") format("woff2");
+	font-weight: undefined;
+	font-style: normal;
+}
+@font-face {
 	font-family: Inter;
 	font-display: swap;
 	src: url("../fonts/Inter-Bold.woff2") format("woff2");

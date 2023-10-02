@@ -1,0 +1,69 @@
+.advantages {
+    margin-top: 104px;
+    margin-bottom: 104px;
+    &__inner {
+    }
+
+    &__title {
+        margin-bottom: 36px;
+        color: #090b19;
+        font-family: FedraSansPro;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__list-item {
+        width: 244px;
+        height: 244px;
+        background-image: url(../../images/adv_polygon.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    &__list-item-img {
+        margin-top: 45px;
+        margin-left: 34px;
+    }
+
+    &__list-item-title {
+        margin-top: 26px;
+        margin-left: 34px;
+    }
+}
+
+@media (max-width: 576px) {
+    .advantages {
+        margin-bottom: 89px;
+        &__list {
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__title {
+            margin-bottom: 60px;
+        }
+
+        &__list-item {
+            width: 190px;
+            height: 190px;
+        }
+
+        &__list-item-title {
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 0px;
+            margin-left: 25px;
+        }
+
+        &__list-item-img {
+            width: 54px;
+            margin-top: 45px;
+            margin-left: 34px;
+        }
+    }
+}

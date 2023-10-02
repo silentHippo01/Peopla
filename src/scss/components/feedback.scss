@@ -1,0 +1,321 @@
+.feedback {
+    &__inner {
+        width: 100%;
+    }
+
+    &__title {
+        font-family: FedraSansPro;
+        font-size: 36px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-family: FedraSansPro;
+        color: #343e3d;
+        font-size: 15px;
+        font-weight: 350;
+        line-height: 24px;
+        margin-bottom: 30px;
+        max-width: 630px;
+    }
+
+    &__subtitle {
+        font-family: FedraSansPro;
+        color: #343e3d;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-bottom: 32px;
+    }
+
+    &__form {
+    }
+
+    &__form-content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__form-inner {
+        width: 100%;
+        max-width: 579px;
+    }
+
+    &__input-block {
+        position: relative;
+    }
+
+    &__input {
+        height: 68px;
+        border-radius: 10px;
+        border: 1px solid #e2e7f1;
+        padding: 20px 26px;
+        display: block;
+        width: 100%;
+        margin-bottom: 35px;
+
+        &::placeholder {
+            color: #b9bed0;
+        }
+    }
+
+    &__input-label {
+        right: 0;
+        position: absolute;
+        top: -30px;
+        display: none;
+        color: #f90606;
+    }
+
+    &__upload-content {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        margin-bottom: 44px;
+    }
+
+    &__upload-icon {
+        width: 68px;
+        height: 68px;
+        background-image: url(./../../images/download_icon.svg);
+        margin-right: 22px;
+    }
+
+    &__upload-title {
+        font-family: FedraSansPro;
+        color: #343e3d;
+        font-size: 15px;
+        line-height: 24px;
+        width: 170px;
+    }
+
+    &__upload-wrapper {
+        width: 100%;
+    }
+
+    &__upload-label {
+        position: relative;
+        display: inline-block;
+    }
+
+    &__upload-input {
+        position: absolute;
+        z-index: 10;
+        opacity: 0;
+        display: block;
+        height: 100%;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+    }
+
+    &__upload-btn {
+        position: relative;
+        display: inline-block;
+        color: rgb(255 255 255);
+        text-align: center;
+        background-color: #00b0d5;
+        padding: 22px 28px;
+        border: none;
+        transition: background-color 0.2s;
+        font-family: Inter;
+        font-size: 17px;
+        font-weight: 500;
+        width: 356px;
+    }
+
+    &__input-error {
+        border: 1px solid #f90606;
+    }
+
+    &__textarea {
+        max-width: 579px;
+        height: 68px;
+        border-radius: 10px;
+        border: 1px solid #e2e7f1;
+        resize: none;
+        max-width: 579px;
+        width: 100%;
+        height: 139px;
+        padding: 20px 26px;
+        margin-bottom: 36px;
+
+        &::placeholder {
+            color: #b9bed0;
+        }
+    }
+
+    &__upload {
+        padding: 48px 48px;
+        background-color: #f3f6fc;
+        border-radius: 10px;
+        max-width: 446px;
+        width: 100%;
+        height: 271px;
+    }
+
+    &__upload-wrapper {
+        display: flex;
+    }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        width: 356px;
+        height: 65px;
+        background: #00b0d5;
+        color: #ffffff;
+    }
+
+    &__form-checkbox {
+        margin-right: 15px;
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    &__form-checkbox-label {
+        color: #949ab0;
+        font-family: Inter;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    &__form-checkbox + &__form-checkbox-label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+    }
+
+    &__form-checkbox + &__form-checkbox-label::before {
+        content: "";
+        display: inline-block;
+        width: 38px;
+        height: 38px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 1px solid #adb5bd;
+        border-radius: 0.25em;
+        margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+    }
+
+    &__form-checkbox:checked + &__form-checkbox-label::before {
+        border: 0.8px solid #949ab0;
+        background-color: #ffffff;
+        background-image: url("../../images/Done.svg");
+        background-size: contain;
+    }
+
+    &__success {
+        display: none;
+        width: 100%;
+        height: 136px;
+        border-radius: 9px;
+        border: 2px solid #90b751;
+        box-shadow: -7px 4px 25px 0px #e2e7f1;
+        padding: 36px 44px;
+        margin-top: 46px;
+    }
+
+    &__success-content {
+        display: flex;
+        align-items: center;
+
+        h6 {
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 23px;
+            color: #000;
+        }
+
+        p {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 350;
+            line-height: 27px;
+        }
+    }
+
+    &__success-icon {
+        margin-right: 35px;
+    }
+}
+
+.file-loaded {
+    background-image: url(./../../images/fileloaded.png);
+    background-repeat: no-repeat;
+}
+
+.disabled_btn {
+    background-color: #bfc8dc;
+}
+
+.displayON {
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .feedback {
+        &__form-content {
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__upload {
+            width: 100%;
+            max-width: 100%;
+            height: 170px;
+            padding: 24px 0;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__upload-btn {
+            width: 228px;
+        }
+
+        &__upload-title {
+            display: none;
+        }
+
+        &__upload {
+            display: flex;
+            height: 138px;
+            justify-content: center;
+        }
+
+        &__upload-content {
+            width: 100px;
+        }
+
+        &__upload-input {
+        }
+
+        &__upload-wrapper {
+            width: 228px;
+        }
+
+        &__upload-content {
+            margin: 0;
+        }
+
+        &__form-content {
+            margin-bottom: 30px;
+        }
+
+        &__form-checkbox-label {
+            margin-bottom: 50px;
+        }
+
+        &__form-checkbox {
+        }
+    }
+}

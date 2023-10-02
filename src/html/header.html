@@ -1,11 +1,49 @@
 <header class="header">
-  <div class="header__container">
-    <a href="#" class="header__logo logo"></a>
-    <nav class="header__menu menu">
-      <ul class="menu__list">
-        <li class="menu__item"><a href="#" class="menu__link">Link</a></li>
-      </ul>
-    </nav>
-    <!-- @@include('./iconMenu.html', {}) -->
-  </div>
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__info">
+                <div class="header__logo">
+                    <a href="#">
+                        <img class="header__logo-img" src="../images/logo.svg" />
+                    </a>
+                </div>
+                <div class="header__info-links">
+                    <a href="tel:+7 (495) 162-84-16" class="header__info-phone">+7 (495) 162-84-16</a>
+                    <a href="mailto:info@superoof.ru" class="header__info-email">info@superoof.ru</a>
+                </div>
+            </div>
+
+            <ul class="header__navigation navigation">
+                <li class="navigation__item">
+                    <a class="navigation__item-link" href="#">Компания</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__item-link" href="#">Рассчитать проект</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__item-link" href="#">Наши объекты</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__item-link" href="#">Купить материалы</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__item-link" href="#">
+                        Контакты
+                    </a>
+                </li>
+                <div class="header__info-links-1">
+                    <h3>Контакты</h3>
+                    <a href="tel:+7 (495) 162-84-16" class="header__info-phone">+7 (495) 162-84-16</a>
+                    <a href="mailto:info@superoof.ru" class="header__info-email">info@superoof.ru</a>
+                </div>
+            </ul>
+
+            @@include('./burgerMenu.html')
+
+            <div class="header__burgerMenu">
+                <span></span>
+            </div>
+
+        </div>
+    </div>
 </header>

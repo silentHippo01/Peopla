@@ -72,3 +72,4 @@ class BaseHelpers {
 }
 
 export default BaseHelpers;
+
